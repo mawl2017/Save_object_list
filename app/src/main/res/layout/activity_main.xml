@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.example.ma.save_object_list.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:layout_marginTop="30dp"
+        android:text="对象和集合的保存" />
+
+    <LinearLayout
+        android:id="@+id/ll_12"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+    <Button
+        android:id="@+id/btn_write_location"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="写入本地"/>
+
+        <Button
+            android:id="@+id/btn_read_location"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="从本地读取"/>
+
+        <Button
+            android:id="@+id/btn_write_SD"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="写入SD卡"/>
+
+        <Button
+            android:id="@+id/btn_read_SD"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="从SD卡读取"/>
+
+        <Button
+            android:id="@+id/btn_write_SD_list"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="集合 写入SD卡"/>
+
+        <Button
+            android:id="@+id/btn_read_SD_list"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="集合 从SD卡读取"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_data"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:singleLine="false"
+        android:layout_marginLeft="20dp"
+        android:background="#fff"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:hint="显示数据"
+        android:layout_below="@+id/ll_12"/>
+</RelativeLayout>
